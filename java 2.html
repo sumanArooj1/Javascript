@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=d, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>This is h1 heading.</h1>
+        <div id="content">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet quibusdam illum aspernatur commodi quod, accusantium pariatur saepe velit quos dicta possimus impedit ipsam, eveniet iste aliquid dolorum! Similique asperiores, repellat libero sapiente voluptatum maiores dolor nam tempora facere beatae quidem optio eos consequuntur animi.</p>
+        </div>
+    </div>
+
+    <script>
+        var name= 'Harry"s';
+        var channel= 'codewithHarry';
+        console.log(name);
+
+        // when we want to use 1 var again and agin in our code so we initialize that first and then used as: ${}
+        var temp= `${name} is a 'nice'person "and" he has a channel called ${channel}`;
+         console.log(temp);
+  
+        //  want to find out lenght of the variable
+         var len= name.length;
+         console.log(`lenght of name is ${len}`);
+
+        //  want to add some text in content Id
+         document.getElementById('content').innerHTML= '<h3> this is a h3 heading</h3>';
+    </script>
+</body>
+</html>
