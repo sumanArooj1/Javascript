@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string functions</title>
+</head>
+<body>
+    <script>
+        var str= "this is a string";
+        console.log(str);
+
+        // First occurance of a string
+        var position= str.indexOf('is');
+        console.log(position);
+
+        // First occurance of a substring
+        var position= str.lastIndexOf('is');
+
+        // want to print number of alphabets
+        var substr= str.slice(1,7);
+        console.log(substr);
+
+        // want to replace (string with Code) so 
+        var replaced= str.replace('string','Code');
+        console.log(str);
+        console.log(replaced);
+        
+        // want to print in uppercase
+        console.log(str.toUpperCase);
+
+
+    </script>
+</body>
+</html>
