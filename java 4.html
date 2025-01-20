@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope and else conditionals</title>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>item-1</li>
+            <li>item-2</li>
+            <li>item-3</li>
+            <li>item-4</li>
+            <li>item-5</li>
+        </ul>
+    </div>
+    <script>
+        var string1= "This is 1st string";
+        // if we rewrite or initiaze another content with the same variale name so first one will changed
+        var string1= "This is 2nd string";
+        console.log(string1)
+
+        // so after that var issue we can use let or const
+        // the let inside paranthese will not be accessable outside but the outside will be accesed anywhere
+        let alphabet= "u";
+        {
+            let alphabet= "u2";
+            console.log(alphabet);  
+        }
+        console.log(alphabet);
+       
+        // // the const can not changed like var
+        // const alphabet = "This can not be changed";
+        //  alphabet = "is it changed";
+        // console.log(alphabet);
+
+        let age= 30;
+        if(age>18){
+            console.log("you can drink cold drink");
+        }
+        else if(age==2){
+            console.log("age is 2");
+        }
+        else{
+            console.log("you can drink water");
+        }
+
+
+        const cups =40;
+        switch(cups){
+            case 4:
+                console.log("the value is 4");
+                break;
+            case 41:
+                console.log("the value is 41");
+                break;
+            default:
+                console.log("the value of cups is none of these");    
+        }
+    </script>
+</body>
+</html>
