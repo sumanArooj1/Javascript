@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert, Prompt & Confirm</title>
+</head>
+<body>
+    <script>
+        // want to show some text to user when he load/opens your website
+        // this will not show any return value
+        alert("You are in CodeWithUs webpage now")
+
+        // want to some msg and also want to take some return value
+        let name = prompt("what's your name?", "Guest");
+        console.log(name);
+
+        // want to confirm some msg from user 
+        let deletePost= confirm("Do you really want to delete the page?");
+        if(deletePost){
+            console.log("You'r post has been deleted succesfully");
+        }
+        else{
+            console.log("You'r post is not deleted");
+        }
+    </script>
+    
+</body>
+</html>

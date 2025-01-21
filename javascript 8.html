@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+</head>
+<body>
+    <h2> Practice program</h2>
+    
+</body>
+<script>
+    // For Loops
+    // let i=0;
+    // for(i=0; i<3; i++){
+    //     console.log(i);
+    // }
+    
+    //Using For loop
+    let friends =  ["rabia", "warda", "maria", "Fari"];
+    // for (let index = 0; index < friends.length; index++) {
+    //      console.log("Hello friend, " + friends[index]);
+    //  }
+    
+    //Using ForEach method modern way
+    // friends.forEach(function f(element){
+    //     console.log("Hello Friend, " + element + " welcome to modern JavaScript");
+    // });
+
+    //Using ForOf method also amodern way
+    // for (element of friends){
+    //     console.log("Hello Friend, " + element + " welcome to modern JavaScript again");
+    // }
+
+    let employee = {
+        name: "Suman",
+        salary: 30,
+        channel: "CodeWithUs"
+    }
+    
+    // Use this loop to iterate over objects in JavaScript
+    for(key in employee){
+        console.log(`The ${key} of employee is ${employee[key]}`);
+    }
+    
+    // while loop in js
+    let i =0;
+    while(i<4){
+        console.log(`${i} is less than 4`);
+        i++;
+    }
+
+     // do while loop in js
+     let j =20;
+    do{
+        console.log(`${j} is less than 4 and we are inside do while loop`);
+        j++;
+    }while(j<4);
+</script>
+</html>
