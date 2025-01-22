@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events & listner to event</title>
+    <style>
+        #btn {
+            padding: 10px 14px;
+            border-color: 3px solid black;
+            color: white;
+            background-color: rgb(93, 172, 185);
+            border-radius: 8px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- browser events:
+    click
+    contextmanu
+    mouseover/mouseout
+    mousedown/mouseup
+    submit
+    focus
+    transitioned -->
+    <div class="container">
+        <h1>This is the heading</h1>
+        <p id="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae nemo, facilis repudiandae ratione
+            dolor iusto velit ipsa provident iste ipsam quod commodi aperiam, soluta earum illo quos ex tenetur
+            explicabo? Illum laboriosam dolor nesciunt animi et aspernatur labore voluptatum, doloribus deserunt
+            eligendi quibusdam, minus mollitia necessitatibus fuga alias a quaerat culpa earum sed. Neque maxime itaque
+            animi saepe eveniet ut rem consectetur? Quam quasi dolore itaque amet laudantium nulla repudiandae
+            perspiciatis reiciendis laboriosam cum sunt adipisci soluta iure eligendi ut eaque odio error vel placeat,
+            cupiditate aut maiores? Ratione, harum. Voluptates corporis nulla, excepturi iure, atque a minus
+            necessitatibus libero quidem vitae quod aperiam rem quas ut delectus amet, eligendi cum modi voluptate
+            repellat sunt asperiores! Nemo quos asperiores id unde expedita cumque repellendus ipsa mollitia, eligendi
+            consequatur fugiat eius nisi iusto ad officia aut facere laborum et aperiam labore debitis molestiae? A
+            deleniti dicta odio exercitationem quam, eius adipisci sit molestiae ea? Eligendi fugit maxime quia
+            obcaecati dolorum natus excepturi assumenda debitis dolorem modi. Voluptates, aliquid? Vero, qui suscipit!
+            Maxime maiores tempore sint similique vel aut officia at suscipit. Molestias voluptates voluptas repudiandae
+            voluptatem veniam eveniet praesentium reprehenderit explicabo, sunt et error at dolore debitis. Repudiandae
+            quam et aliquid.</p>
+    </div>
+    <button id="btn" onclick="toggleHide()">show/hide</button>
+    <script>
+        let para = document.getElementById('para');
+        para.addEventListener('mouseover', function run() {
+            alert('Mouse inside');
+        });
+        
+        para.addEventListener('mouseout', function run() {
+            alert('Mouse now outside');
+        });
+
+
+        function toggleHide() {
+            let btn = document.getElementById('btn');
+            let para = document.getElementById('para');
+            if (para.style.display != 'none') {
+                para.style.display = 'none';
+            }
+            else {
+                para.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+
+</html>
