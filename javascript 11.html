@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set intervals & setTimeOut</title>
+</head>
+<body>
+    <div class="container">
+        Time now is <span id="time"></span>
+    </div>
+
+    <script>
+        console.log("This is about times");
+        // setTimeout allows us to run the function once after some interval of time
+        function greet(){
+            console.log("Hello good mornig");
+        }
+        // setTimeout(greet, 5000);
+
+        // timeOut= setTimeout(greet, 5000);
+        // console.log(timeOut);
+
+        // clearTimeout(timeOut);
+
+
+        // setInterval( greet, 2000);
+        intervalId= setInterval( greet, 2000);
+        clearInterval(intervalId);
+
+        function displayTime(){
+            time= new Date();
+            console.log(time);
+            document.getElementById('time').innerHTML =time;
+        }
+        setInterval(displayTime, 1000);
+    </script>
+    
+</body>
+</html>
